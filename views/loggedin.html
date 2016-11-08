@@ -1,0 +1,5 @@
+{% for i in range(0, 10)%}
+{% for user in users%}
+<h1>Logged In as {{ queryStuff.username | title}}. with API token {{ queryStuff.api_token }} who is not {{ user }}</h1>  {# {{ name.property }} is pulling from the server.js object specified.  Is a template situation #}
+{% endfor%}
+{% endfor %}
